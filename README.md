@@ -24,4 +24,4 @@ A mobile-first Progressive Web App (PWA) simulating a contactless guest arrival 
 *   **Distribution:** PWA (Progressive Web App)
 
 ---
-**Role:** Software Engineer & AI Strategist | [michellevision.com](https://michellevision.com)
+**Role:** Hospitality Technology Engineer | [michellevision.com](https://michellevision.com)
