@@ -1,4 +1,3 @@
-Here’s a production-ready project structure that maps directly to the digital check-in flow described earlier. It’s a standard Next.js (App Router) layout with dedicated folders for PMS adapters, Supabase logic, and HTNG integration points.
 
 ```
 hotel-checkin-pwa/
