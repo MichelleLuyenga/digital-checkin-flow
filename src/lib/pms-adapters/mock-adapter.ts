@@ -32,10 +32,14 @@ export class MockPMSAdapter implements IPMSAdapter {
             filtered = filtered.filter((r) => r.floor === criteria.floor);
         }
         if (criteria.bedType) {
-            filtered = filtered.filter((r) => r.bedType.toLowerCase() === criteria.bedType.toLowerCase());
+            filtered = filtered.filter(
+                (r) => r.bedType && r.bedType.toLowerCase() === criteria.bedType!.toLowerCase()
+            );
         }
         if (criteria.type) {
-            filtered = filtered.filter((r) => r.type.toLowerCase() === criteria.type.toLowerCase());
+            filtered = filtered.filter(
+                (r) => r.type && r.type.toLowerCase() === criteria.type!.toLowerCase()
+            );
         }
         // If no rooms match, return empty (the UI should handle)
         return filtered;

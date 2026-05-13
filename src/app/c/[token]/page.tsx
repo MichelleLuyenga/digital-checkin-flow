@@ -4,7 +4,7 @@ import { CheckinClient } from './client';
 import { CheckinStep } from '../../../lib/hooks/useCheckinFlow';
 
 export default async function CheckinPage({ params }: { params: { token: string } }) {
-    const supabase = createServerSupabaseClient();
+    const supabase = await createServerSupabaseClient();
     const { data: session, error } = await supabase
         .from('checkin_sessions')
         .select('*, reservation:reservations(*)')

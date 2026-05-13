@@ -20,7 +20,9 @@ async function processQueue() {
     if (isProcessing) return;
     isProcessing = true;
     while (jobs.size > 0) {
-        const [id, job] = jobs.entries().next().value;
+        const entry = jobs.entries().next();
+        if (entry.done) break;
+        const [id, job] = entry.value;  // non-null assertion
         jobs.delete(id);
         try {
             // We'll call the appropriate adapter method based on action.
