@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { supabaseAdmin } from '@/lib/supabase/admin';
-import { getKYCProvider } from '@/lib/kyc';
-import { getPMSAdapter } from '@/lib/pms-adapters';
-import { enqueuePMSRetry } from '@/lib/queue/pms-retry';
+import { supabaseAdmin } from '../../../../lib/supabase/admin';
+import { getKYCProvider } from '../../../../lib/kyc';
+import { getPMSAdapter } from '../../../../lib/pms-adapters';
+import { enqueuePMSRetry } from '../../../../lib/queue/pms-retry';
 
 export async function POST(request: NextRequest) {
     const { reservationId, documentUrl } = await request.json();

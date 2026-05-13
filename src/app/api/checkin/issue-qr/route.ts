@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { supabaseAdmin } from '@/lib/supabase/admin';
-import { getPMSAdapter } from '@/lib/pms-adapters';
-import { createQRToken } from '@/lib/qr/generate';
-import { enqueuePMSRetry } from '@/lib/queue/pms-retry';
+import { supabaseAdmin } from '../../../../lib/supabase/admin';
+import { getPMSAdapter } from '../../../../lib/pms-adapters';
+import { createQRToken } from '../../../../lib/qr/generate';
+import { enqueuePMSRetry } from '../../../../lib/queue/pms-retry';
 
 export async function POST(request: NextRequest) {
     const { reservationId } = await request.json();

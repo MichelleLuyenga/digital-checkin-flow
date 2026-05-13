@@ -1,5 +1,5 @@
-import { CheckinStep } from '@/lib/hooks/useCheckinFlow';
-import { cn } from '@/lib/utils'; // simple cn helper
+import { CheckinStep } from '../../lib/hooks/useCheckinFlow';
+import { cn } from '../../lib/utils'; // simple cn helper
 
 const steps: { key: CheckinStep; label: string }[] = [
     { key: 'identity', label: 'Identity' },

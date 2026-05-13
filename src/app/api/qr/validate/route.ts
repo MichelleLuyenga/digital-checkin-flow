@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyQRToken } from '@/lib/qr/generate';
-import { supabaseAdmin } from '@/lib/supabase/admin';
+import { verifyQRToken } from '../../../../lib/qr/generate';
+import { supabaseAdmin } from '../../../../lib/supabase/admin';
 
 export async function GET(request: NextRequest) {
     const token = request.nextUrl.searchParams.get('token');

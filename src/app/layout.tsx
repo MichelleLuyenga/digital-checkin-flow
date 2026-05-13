@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import '../styles/globals.css';
-import { InstallBanner } from '@/components/pwa/InstallBanner';
+import { InstallBanner } from '../components/pwa/InstallBanner';
 
 export const viewport: Viewport = {
   themeColor: '#0f172a',

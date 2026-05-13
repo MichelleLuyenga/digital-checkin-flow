@@ -1,12 +1,12 @@
 'use client';
-import { useCheckinFlow, CheckinStep } from '@/lib/hooks/useCheckinFlow';
-import { ProgressIndicator } from '@/components/checkin/ProgressIndicator';
-import { StepWrapper } from '@/components/checkin/StepWrapper';
-import { IdentityStep } from '@/components/checkin/IdentityStep';
-import { PreferencesStep } from '@/components/checkin/PreferencesStep';
-import { QrCodeStep } from '@/components/checkin/QrCodeStep';
-import { Button } from '@/components/ui/Button';
-import { Card } from '@/components/ui/Card';
+import { useCheckinFlow, CheckinStep } from '../../../lib/hooks/useCheckinFlow';
+import { ProgressIndicator } from '../../../components/checkin/ProgressIndicator';
+import { StepWrapper } from '../../../components/checkin/StepWrapper';
+import { IdentityStep } from '../../../components/checkin/IdentityStep';
+import { PreferencesStep } from '../../../components/checkin/PreferencesStep';
+import { QrCodeStep } from '../../../components/checkin/QrCodeStep';
+import { Button } from '../../../components/ui/Button';
+import { Card } from '../../../components/ui/Card';
 
 interface CheckinClientProps {
     reservation: {

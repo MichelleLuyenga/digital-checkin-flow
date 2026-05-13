@@ -1,7 +1,7 @@
-import { createServerSupabaseClient } from '@/lib/supabase/server';
+import { createServerSupabaseClient } from '../../../lib/supabase/server';
 import { notFound } from 'next/navigation';
 import { CheckinClient } from './client';
-import { CheckinStep } from '@/lib/hooks/useCheckinFlow';
+import { CheckinStep } from '../../../lib/hooks/useCheckinFlow';
 
 export default async function CheckinPage({ params }: { params: { token: string } }) {
     const supabase = createServerSupabaseClient();

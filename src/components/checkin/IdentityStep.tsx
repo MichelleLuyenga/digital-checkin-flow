@@ -1,9 +1,9 @@
 'use client';
 import { useState, useRef } from 'react';
-import { Button } from '@/components/ui/Button';
-import { Card } from '@/components/ui/Card';
+import { Button } from '../../components/ui/Button';
+import { Card } from '../../components/ui/Card';
 import { Upload, Camera, Check } from 'lucide-react';
-import { createClient } from '@/lib/supabase/client';
+import { createClient } from '../../lib/supabase/client';
 
 interface IdentityStepProps {
     reservationId: string;

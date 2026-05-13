@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
     "start": "next start",
     "lint": "next lint",
     "db:migrate": "npx supabase migration up",
@@ -29,7 +29,8 @@
     "react-hook-form": "^7.51.4",
     "tailwindcss": "^4.3.0",
     "uuid": "^14.0.0",
-    "zod": "^4.4.3"
+    "zod": "^4.4.3",
+    "@ducanh2912/next-pwa": "^10.2.9"
   },
   "devDependencies": {
     "@types/node": "^25.7.0",
